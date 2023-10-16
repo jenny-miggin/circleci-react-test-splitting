@@ -10,6 +10,13 @@ jobs:
         parallelism: 5
         steps:
             - checkout
+            - run:
+                name: Stop execution if not running any tests 
+                command: |
+                    mkdir -p ./tmp && \
+                    >./tmp/tests.txt && \
+                    circleci tests glob "src/__tests__/*.js" | circleci tests run --command=">./tmp/tests.txt xargs echo" --split-by=timings #Get the list of tests for this container/VM
+                    [ -s tmp/tests.txt ] || circleci-agent step halt #if there are no tests, terminate execution after this step
             - node/install-packages:
                 pkg-manager: yarn      
             - run: mkdir ~/junit
