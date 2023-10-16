@@ -16,8 +16,8 @@ jobs:
             - run:
                 name: Test application
                 command: |
-                    TEST_FILES=$(circleci tests glob "src/__tests__/*.js" 
-                    echo "$TEST_FILES" | circleci tests run --command="xargs yarn test $TEST_FILES" --verbose --split-by=timings)
+                    TEST_FILES=$(circleci tests glob "src/__tests__/*.js")
+                    echo "$TEST_FILES" | circleci tests run --command="xargs yarn test" --verbose --split-by=timings)
             - run:
                 command: cp junit.xml ~/junit/
                 when: always
