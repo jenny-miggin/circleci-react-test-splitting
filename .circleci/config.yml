@@ -24,6 +24,7 @@ jobs:
                 name: Test application
                 command: |
                     TEST_FILES=$(circleci tests glob "src/__tests__/*.js")
+                    echo "$TEST_FILES" > glob-output.txt
                     echo "$TEST_FILES" | circleci tests run --command="xargs yarn test" --verbose --split-by=timings
             - run:
                 command: cp junit.xml ~/junit/
@@ -32,6 +33,9 @@ jobs:
                 path: ~/junit
             - store_artifacts:
                 path: ~/junit
+            - store_artifacts:
+                path: glob-output.txt
+
 workflows:
     build-and-test:
       jobs:
