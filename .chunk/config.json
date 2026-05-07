@@ -1,0 +1,19 @@
+{
+  "commands": [
+    {
+      "name": "install",
+      "run": "yarn install --frozen-lockfile"
+    },
+    {
+      "name": "test",
+      "run": "yarn test",
+      "role": "gate",
+      "timeout": 300,
+      "limit": 3
+    }
+  ],
+  "vcs": {
+    "org": "jenny-miggin",
+    "repo": "circleci-react-test-splitting"
+  }
+}

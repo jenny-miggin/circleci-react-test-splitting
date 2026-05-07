@@ -1,0 +1,12 @@
+{
+  "org_id": "c892e553-ef13-4e2d-8a95-849e44c5293c",
+  "project_id": "9d870321-2d65-4837-96a4-ad4f3c2ceed7",
+  "org_type": "github",
+  "definitions": {
+    "dev": {
+      "definition_id": "dcf28456-08ee-5ed3-b1aa-650d4be84388",
+      "chunk_environment_id": null,
+      "default_branch": "main"
+    }
+  }
+}
