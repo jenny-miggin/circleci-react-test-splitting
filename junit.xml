@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="60" failures="0" time="2.119">
+  <testsuite name="filterByTerm – edge cases" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:58" time="0.986" tests="10">
+    <testcase classname="filterByTerm – edge cases returns an empty array when the input array is empty" name="filterByTerm – edge cases returns an empty array when the input array is empty" time="0.005" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases returns an empty array when no items match" name="filterByTerm – edge cases returns an empty array when no items match" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases returns all matching items when multiple items match" name="filterByTerm – edge cases returns all matching items when multiple items match" time="0.008" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases matching is case-insensitive (uppercase search term)" name="filterByTerm – edge cases matching is case-insensitive (uppercase search term)" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases matching is case-insensitive (mixed-case search term)" name="filterByTerm – edge cases matching is case-insensitive (mixed-case search term)" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases partial term match returns the correct items" name="filterByTerm – edge cases partial term match returns the correct items" time="0" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases returns all items when the search term is an empty string" name="filterByTerm – edge cases returns all items when the search term is an empty string" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases returns the only item in a single-element array when it matches" name="filterByTerm – edge cases returns the only item in a single-element array when it matches" time="0.006" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases returns empty array for a single-element array that does not match" name="filterByTerm – edge cases returns empty array for a single-element array that does not match" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+    <testcase classname="filterByTerm – edge cases does not mutate the original input array" name="filterByTerm – edge cases does not mutate the original input array" time="0.001" file="src/__tests__/filter.extended.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="add – edge cases" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:58" time="1.141" tests="24">
+    <testcase classname="add – edge cases adding zero returns the same number" name="add – edge cases adding zero returns the same number" time="0.003" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="add – edge cases adding two zeros returns zero" name="add – edge cases adding two zeros returns zero" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="add – edge cases adding negative numbers" name="add – edge cases adding negative numbers" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="add – edge cases adding a positive and a negative" name="add – edge cases adding a positive and a negative" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="add – edge cases adding floats" name="add – edge cases adding floats" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="add – edge cases adding large numbers" name="add – edge cases adding large numbers" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="subtract – edge cases subtracting zero returns the same number" name="subtract – edge cases subtracting zero returns the same number" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="subtract – edge cases subtracting a number from itself returns zero" name="subtract – edge cases subtracting a number from itself returns zero" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="subtract – edge cases subtracting a larger number gives a negative result" name="subtract – edge cases subtracting a larger number gives a negative result" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="subtract – edge cases subtracting negative numbers" name="subtract – edge cases subtracting negative numbers" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="subtract – edge cases subtracting floats" name="subtract – edge cases subtracting floats" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="multiply – edge cases multiplying by zero returns zero" name="multiply – edge cases multiplying by zero returns zero" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="multiply – edge cases multiplying by one returns the same number" name="multiply – edge cases multiplying by one returns the same number" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="multiply – edge cases multiplying two negatives gives a positive" name="multiply – edge cases multiplying two negatives gives a positive" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="multiply – edge cases multiplying a positive and a negative gives a negative" name="multiply – edge cases multiplying a positive and a negative gives a negative" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="multiply – edge cases multiplying floats" name="multiply – edge cases multiplying floats" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing by one returns the same number" name="divide – edge cases dividing by one returns the same number" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing a number by itself returns one" name="divide – edge cases dividing a number by itself returns one" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing zero by a non-zero number returns zero" name="divide – edge cases dividing zero by a non-zero number returns zero" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing by zero returns Infinity" name="divide – edge cases dividing by zero returns Infinity" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing zero by zero returns NaN" name="divide – edge cases dividing zero by zero returns NaN" time="0.001" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing negative numbers" name="divide – edge cases dividing negative numbers" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing a positive by a negative gives a negative" name="divide – edge cases dividing a positive by a negative gives a negative" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+    <testcase classname="divide – edge cases dividing floats" name="divide – edge cases dividing floats" time="0" file="src/__tests__/math.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="unregister" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:58" time="1.083" tests="4">
+    <testcase classname="unregister calls navigator.serviceWorker.ready then unregister() when supported" name="unregister calls navigator.serviceWorker.ready then unregister() when supported" time="0.132" file="src/__tests__/serviceWorker.test.js">
+    </testcase>
+    <testcase classname="unregister does not throw when serviceWorker is not in navigator" name="unregister does not throw when serviceWorker is not in navigator" time="0.001" file="src/__tests__/serviceWorker.test.js">
+    </testcase>
+    <testcase classname="register – non-production environment does not attempt to register a service worker outside production" name="register – non-production environment does not attempt to register a service worker outside production" time="0.001" file="src/__tests__/serviceWorker.test.js">
+    </testcase>
+    <testcase classname="register – production, cross-origin PUBLIC_URL returns early and does not register when PUBLIC_URL origin differs" name="register – production, cross-origin PUBLIC_URL returns early and does not register when PUBLIC_URL origin differs" time="0.003" file="src/__tests__/serviceWorker.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="Addition testing" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.114" tests="5">
+    <testcase classname="Addition testing 2 + 2 = 4" name="Addition testing 2 + 2 = 4" time="0.001" file="src/__tests__/addition.test.js">
+    </testcase>
+    <testcase classname="Addition testing 2 + 3 = 5" name="Addition testing 2 + 3 = 5" time="0" file="src/__tests__/addition.test.js">
+    </testcase>
+    <testcase classname="Addition testing 2 + 5 = 7" name="Addition testing 2 + 5 = 7" time="0" file="src/__tests__/addition.test.js">
+    </testcase>
+    <testcase classname="Addition testing 2 + 7 = 9" name="Addition testing 2 + 7 = 9" time="0.001" file="src/__tests__/addition.test.js">
+    </testcase>
+    <testcase classname="Addition testing 2 + 20 = 22" name="Addition testing 2 + 20 = 22" time="0" file="src/__tests__/addition.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="Filter function" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.09" tests="1">
+    <testcase classname="Filter function it should filter characters by a search term" name="Filter function it should filter characters by a search term" time="0.002" file="src/__tests__/filter.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="Subtraction testing" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.082" tests="3">
+    <testcase classname="Subtraction testing 4 - 1 = 3" name="Subtraction testing 4 - 1 = 3" time="0" file="src/__tests__/subtraction.test.js">
+    </testcase>
+    <testcase classname="Subtraction testing 6 - 1 = 5" name="Subtraction testing 6 - 1 = 5" time="0.001" file="src/__tests__/subtraction.test.js">
+    </testcase>
+    <testcase classname="Subtraction testing 10 - 1 = 9" name="Subtraction testing 10 - 1 = 9" time="0" file="src/__tests__/subtraction.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="Multiplication testing" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.098" tests="3">
+    <testcase classname="Multiplication testing 3 * 1 = 3" name="Multiplication testing 3 * 1 = 3" time="0.001" file="src/__tests__/multiplication.test.js">
+    </testcase>
+    <testcase classname="Multiplication testing 3 * 3 = 9" name="Multiplication testing 3 * 3 = 9" time="0" file="src/__tests__/multiplication.test.js">
+    </testcase>
+    <testcase classname="Multiplication testing 3 * 5 = 15" name="Multiplication testing 3 * 5 = 15" time="0.001" file="src/__tests__/multiplication.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="Division testing" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.096" tests="2">
+    <testcase classname="Division testing 8 / 1 = 8" name="Division testing 8 / 1 = 8" time="0.001" file="src/__tests__/division.test.js">
+    </testcase>
+    <testcase classname="Division testing 9 / 3 = 2" name="Division testing 9 / 3 = 2" time="0" file="src/__tests__/division.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="App component – extended coverage" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.451" tests="7">
+    <testcase classname="App component – extended coverage renders the app logo image" name="App component – extended coverage renders the app logo image" time="0.022" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage renders the inline code tag with the correct content" name="App component – extended coverage renders the inline code tag with the correct content" time="0.004" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage renders the &quot;Learn React&quot; link with the correct href" name="App component – extended coverage renders the &quot;Learn React&quot; link with the correct href" time="0.003" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage &quot;Learn React&quot; link opens in a new tab" name="App component – extended coverage &quot;Learn React&quot; link opens in a new tab" time="0.002" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage &quot;Learn React&quot; link has rel=&quot;noopener noreferrer&quot; for security" name="App component – extended coverage &quot;Learn React&quot; link has rel=&quot;noopener noreferrer&quot; for security" time="0.002" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage renders the App-header element" name="App component – extended coverage renders the App-header element" time="0.002" file="src/__tests__/App.extended.test.js">
+    </testcase>
+    <testcase classname="App component – extended coverage renders the root App div" name="App component – extended coverage renders the root App div" time="0.002" file="src/__tests__/App.extended.test.js">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2026-05-07T13:41:59" time="0.274" tests="1">
+    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.02" file="src/__tests__/App.test.js">
+    </testcase>
+  </testsuite>
+</testsuites>
