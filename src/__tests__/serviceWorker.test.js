@@ -52,14 +52,16 @@ describe('serviceWorker.register', () => {
   const originalNodeEnv = process.env.NODE_ENV;
   const originalPublicUrl = process.env.PUBLIC_URL;
   let originalLocation;
+  let originalAddEventListener;
   let loadHandler;
 
   beforeEach(() => {
     originalLocation = window.location;
+    originalAddEventListener = window.addEventListener;
     loadHandler = null;
-    jest.spyOn(window, 'addEventListener').mockImplementation((event, handler) => {
+    window.addEventListener = function (event, handler) {
       if (event === 'load') loadHandler = handler;
-    });
+    };
   });
 
   afterEach(() => {
@@ -69,6 +71,7 @@ describe('serviceWorker.register', () => {
       configurable: true,
       value: originalLocation,
     });
+    window.addEventListener = originalAddEventListener;
     delete navigator.serviceWorker;
     delete global.fetch;
     jest.restoreAllMocks();
