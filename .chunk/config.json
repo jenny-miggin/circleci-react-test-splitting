@@ -6,7 +6,7 @@
     },
     {
       "name": "test",
-      "run": "yarn test",
+      "run": "CI=true yarn test --watchAll=false",
       "role": "gate",
       "timeout": 300,
       "limit": 3
@@ -15,5 +15,24 @@
   "vcs": {
     "org": "jenny-miggin",
     "repo": "circleci-react-test-splitting"
+  },
+  "environment": {
+    "stack": "javascript",
+    "setup": [
+      {
+        "name": "system",
+        "command": "sudo npm install -g yarn"
+      },
+      {
+        "name": "install",
+        "command": "yarn install"
+      },
+      {
+        "name": "test",
+        "command": "yarn test"
+      }
+    ],
+    "image": "cimg/node",
+    "image_version": "26.1.0"
   }
 }

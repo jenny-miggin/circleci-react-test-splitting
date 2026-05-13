@@ -18,7 +18,7 @@
           },
           {
             "type": "command",
-            "command": "cd ${CLAUDE_PROJECT_DIR:-.} \u0026\u0026 yarn test",
+            "command": "cd ${CLAUDE_PROJECT_DIR:-.} \u0026\u0026 CI=true yarn test --watchAll=false",
             "timeout": 300
           }
         ]
